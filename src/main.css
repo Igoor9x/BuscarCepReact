@@ -1,0 +1,120 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+}
+.title {
+    text-align: center;
+    padding: 0 15px;
+    font-size: 35pt;
+    color: #3c3c3c;
+    text-shadow: 0px 0px 4px  #ffffff;
+    animation: introducter .8s;
+}
+.containerInput {
+    display: flex;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background: #3c3c3c;
+    box-shadow: 1px 3px 8px rgb(0, 0, 0);
+    animation: introducter .8s;
+}
+@keyframes introducter{
+     from{
+        transform: scale(0) rotate(55deg);
+     }
+     to{
+        transform: scale(1) rotate(0);
+     }
+}
+
+.containerInput input{
+    width: 300px;
+    padding: 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 12pt;
+}
+.containerInput input::placeholder{
+    color: #b9b9b9;
+}
+.buttonSearch{
+    background: transparent;
+    border: none;
+    color: #b9b9b9;
+    cursor: pointer;
+    transition: .4s;
+    margin-right: 15px;
+}
+.buttonSearch:hover{
+    color: #fff;
+    transform: scale(1.2);
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    padding: 20px;
+    color: #c2c0c0;
+    background: #3c3c3c;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgb(0, 0, 0);
+    animation: introducter .8s;
+}
+.main h2{
+    border-bottom: 1px solid #c2c0c0;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 28pt;
+}
+.main span{
+    font-size: 16pt;
+    margin-bottom: 5px;
+}
+h2:hover, .rua:hover, .logradouro:hover,
+ .bairro:hover, .estado:hover{
+ user-select: none;
+    color: #fff;
+    cursor: pointer;
+}
+@media (max-width:500px){
+   .title{
+        font-size: 28pt;
+    }
+    .container{
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+    .main {
+    width:  80vw;
+    }
+    
+}
+@media (max-width:410px){
+    .title{
+        font-size: 24pt;
+    }
+   .containerInput{
+        width: 88vw;
+    }
+    .buttonSearch{
+        margin-right: 5px;
+    }
+    .main h2{
+        font-size: 28pt;
+    }
+    .main span{
+    font-size: 14pt;
+    }
+    
+}
+
