@@ -38,11 +38,11 @@ function App() {
   return (
     <div className="container">
 
-      <h1 className="title">Insira seu CEP</h1>
+      <h1 className="title">Buscador de CEP</h1>
       <div className="containerInput">
         <input className="text"
         type="text"
-        placeholder="Insira sua cidade"
+        placeholder="Insira seu CEP"
         value={input}
         onChange={(e) => setInput(e.target.value)}
         onKeyDown={enter}
