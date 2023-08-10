@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="container">
 
-      <h1 className="title">Procure sua cidade</h1>
+      <h1 className="title">Insira seu CEP</h1>
       <div className="containerInput">
         <input className="text"
         type="text"
